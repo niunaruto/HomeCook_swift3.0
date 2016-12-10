@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A2323a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9OI-fd-sEj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="29l-n7-CPE">
+            <objects>
+                <tabBarController hidesBottomBarWhenPushed="YES" id="9OI-fd-sEj" customClass="HCMainViewController" customModule="HomeCook_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="I0a-6D-5zr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="TmX-O9-GS3" kind="relationship" relationship="viewControllers" id="o4l-3H-2MJ"/>
+                        <segue destination="Xk0-4P-2dD" kind="relationship" relationship="viewControllers" id="7wk-yI-I0Y"/>
+                        <segue destination="TXc-fm-nHb" kind="relationship" relationship="viewControllers" id="Lq0-ek-Ljc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0iO-A4-SiO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2209" y="1133"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="MXt-qL-B4R">
+            <objects>
+                <viewController id="TmX-O9-GS3" customClass="HCHomeViewController" customModule="HomeCook_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IpP-5z-sjL"/>
+                        <viewControllerLayoutGuide type="bottom" id="qu7-hf-rra"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rcF-Dm-dQq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Tabbar_home_nol~iphone" selectedImage="Tabbar_home_sel~iphone" id="b2M-64-Aav">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YxJ-dU-yAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-543" y="346"/>
+        </scene>
+        <!--Manager View Controller-->
+        <scene sceneID="Pda-tN-OiS">
+            <objects>
+                <viewController id="Xk0-4P-2dD" customClass="HCManagerViewController" customModule="HomeCook_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vxu-Fq-fra"/>
+                        <viewControllerLayoutGuide type="bottom" id="yo0-ek-PQK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IF1-Lp-PR0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Tabbar_light_nol~iphone" selectedImage="Tabbar_light_sel~iphone" id="1AY-AP-ikF">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zM8-Ut-GYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-543" y="1155"/>
+        </scene>
+        <!--Mine View Controller-->
+        <scene sceneID="Ph9-yx-jQo">
+            <objects>
+                <viewController id="TXc-fm-nHb" customClass="HCMineViewController" customModule="HomeCook_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="04b-sx-NYf"/>
+                        <viewControllerLayoutGuide type="bottom" id="dJa-k8-28U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ARp-20-u7g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Tabbar_me_nol~iphone" selectedImage="Tabbar_me_sel~iphone" id="nwZ-pA-dRk">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rxB-48-oyt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-543" y="1979"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tabbar_home_nol~iphone" width="35" height="50"/>
+        <image name="Tabbar_home_sel~iphone" width="35" height="50"/>
+        <image name="Tabbar_light_nol~iphone" width="35" height="50"/>
+        <image name="Tabbar_light_sel~iphone" width="35" height="50"/>
+        <image name="Tabbar_me_nol~iphone" width="35" height="50"/>
+        <image name="Tabbar_me_sel~iphone" width="35" height="50"/>
+    </resources>
+</document>
